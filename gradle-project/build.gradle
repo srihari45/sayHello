@@ -1,0 +1,27 @@
+apply plugin : 'application'
+apply plugin : 'war'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+
+	mavenCentral()
+}
+
+dependencies {
+	
+	compile "joda-time:joda-time:2.2"
+	compile 'org.springframework:spring-core:4.2.6.RELEASE'
+	compile 'org.springframework:spring-web:4.2.6.RELEASE'
+	compile 'org.springframework:spring-webmvc:4.2.6.RELEASE'
+	compile group: 'org.springframework', name: 'spring-context', version: '4.2.6.RELEASE'
+	compile group: 'org.springframework', name: 'spring-tx', version: '4.2.6.RELEASE'
+	compile group: 'org.springframework', name: 'spring-orm', version: '4.2.6.RELEASE'
+	
+}
+
+war {
+	archiveName 'gradle-project.war'
+}
+

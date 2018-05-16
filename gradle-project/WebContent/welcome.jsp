@@ -1,0 +1,1 @@
+<%request.getRequestDispatcher("/home.html").forward(request, response);%>
