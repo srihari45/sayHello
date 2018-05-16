@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 public class BaseActionController {
 
-	//Second Commit..
 	@RequestMapping(value = "/home.html", method = RequestMethod.GET)
 	public String goHome(HttpServletRequest request) {
 		return "index";
